@@ -2,9 +2,9 @@
 #include <conio.h>
 using namespace std;
 
-const int MAX_SIZE = 25; // Ukuran maksimum array
-int arr[MAX_SIZE]; // Array untuk menyimpan data
-int n = 0; // Jumlah elemen yang dimasukkan
+const int MAX_SIZE = 25;
+int arr[MAX_SIZE]; 
+int n = 0; 
 
 void dMenu() {
     system("cls");
@@ -18,15 +18,15 @@ void dMenu() {
 }
 
 void inputData() {
-  system("cls");
-    cout << "Masukkan jumlah elemen array (max " << MAX_SIZE << "): ";
-    cin >> n;
+  cout<< " Masukkan jumlah elemen array (max " << MAX_SIZE <<)"
+  cin >> n;
 
-    if (n > MAX_SIZE || n <= 0) {
-        cout << "Jumlah elemen tidak valid!" << endl;
-        getch(); // Tunggu input dari pengguna
-        return;
-    }
+  if (n <= 0 || n > MAX_SIZE){
+  cout << "jumlah elemen tidak valid!\n";
+  cin.get(); 
+  return;
+  }
+}
 
     cout << "Masukkan " << n << " elemen array:" << endl;
     for (int i = 0; i < n; i++) {
