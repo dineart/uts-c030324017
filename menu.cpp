@@ -68,7 +68,7 @@ void bubbleSorting() {
 
 void sepatahKata() {
     system("cls");
-    cout << "Sabar, bentar lagi akan indah\n @dineunti";
+    cout << "Tetap teguh dan lihat keindahan prosesnya\n @dineunti";
     getch();
 }
 
